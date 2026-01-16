@@ -46,6 +46,7 @@ if json_output:
     with open(output_filename, 'w', encoding='utf-8') as outfile:
         outfile.write(json_output)
     
+    # Printing the validation(SUCCESS/FAILURE)
     print(f"SUCCESS: JSON generated at {os.path.abspath(output_filename)}")
 else:
     print(f"ERROR: Directory '{target_directory}' not found.")
