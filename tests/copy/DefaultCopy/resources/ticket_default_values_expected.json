@@ -1,0 +1,82 @@
+{
+ 
+    "default":
+    { 
+        "defaultProductGroup":
+        { 
+            "src" : 
+            {
+                "scan": 
+                { 
+                    "colorMode": "color", 
+                    "resolution": "e300Dpi" 
+                }
+            },
+            "dest": 
+            { 
+                "print": 
+                { 
+                    "copies": 1
+                }
+            }
+        }
+    },
+    "designjet":
+    {
+        "defaultProductGroup":
+        { 
+            "src" : 
+            {
+                "scan": 
+                { 
+                    "colorMode": "color", 
+                    "resolution": "e300Dpi"  
+                }
+            },
+            "pipelineOptions":{
+                "imageModifications":
+                {
+                    "outputCanvasMediaSize":"any",
+                    "outputCanvasMediaId": "auto",
+                    "outputCanvasCustomWidth": 66,
+                    "outputCanvasCustomLength": 66,
+                    "outputCanvasAnchor": "topCenter",
+                    "outputCanvasOrientation": "landscape",
+                    "backgroundColorRemoval": "false",
+                    "backgroundColorRemovalLevel": 0,
+                    "blackEnhancementLevel": 60
+                }
+            },
+            "dest": 
+            { 
+                "print": 
+                { 
+                    "copies": 1,
+                    "mediaDestination": "stacker-1"
+                }
+            }
+        }
+    },
+    "selene":
+    {
+        "defaultProductGroup":
+        { 
+            "src" : 
+            {
+                "scan": 
+                { 
+                    "colorMode": "color", 
+                    "resolution": "e300Dpi"  
+                }
+            },
+            "dest": 
+            { 
+                "print": 
+                { 
+                    "copies": 1
+                }
+            }
+        }
+    }
+
+}
